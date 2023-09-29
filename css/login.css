@@ -1,0 +1,395 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #f84616;
+}
+
+#close {
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+#main {
+    position: relative;
+}
+
+
+/* ----------- Offer Navbar ------------  */
+
+.offer-navbar {
+    background: #eceae4 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+.offer-navbar span {
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center !important;
+}
+
+/* ----------- Main Navbar ------------  */
+.login-btn:focus {
+    border: none;
+    padding: 0 !important;
+    margin-left: -50px !important;
+}
+
+.login-modal {
+    position: fixed;
+    z-index: 9;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    height: 45vh;
+    width: 40vw;
+    position: absolute !important;
+    top: -51%;
+    z-index: -1;
+    left: -100% !important;
+    display: none !important;
+}
+
+.dropdown-item {
+    background: transparent !important;
+}
+
+
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #f84616;
+    transition: all .5s;
+
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #f84616;
+}
+
+.nav-item a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .25s;
+}
+
+
+.nav-link div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.hover-list a:hover::before {
+    width: 0% !important;
+}
+
+
+.active {
+    color: #f84616 !important;
+}
+
+.nav-item a:focus {
+    color: #f84616 !important;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#inner-para {
+    font-size: .9rem;
+}
+
+
+/*-------------------- Login-Main -----------------------*/
+#Login{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.loginform input{
+    width: 770px;
+}
+.loginform input:focus{
+    box-shadow: none;
+}
+
+.Login-btn{
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.Login-btn:hover{
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000 !important;
+}
+
+
+/*------------------- login Footer--------------*/
+
+
+#loginFooter {
+    background: #212529;
+    height: auto;
+    width: 100%;
+}
+
+.login-footer-btn {
+    background: transparent;
+    border: .1px solid #fff !important;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.login-footer-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.login-footer-btn:hover::before,
+.login-footer-btn a:hover {
+    cursor: pointer;
+    width: 100%;
+    color: #000 !important;
+}
+
+#LoginError1{
+    display: none;
+}
+
+#LoginError1{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+/*------------------header-----------------*/
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        z-index: 9;
+    }
+    .time{
+        display: none;
+    }
+    .main-navbar{
+        padding: 1rem 0 ;
+    }
+    .navbar-brand{
+        position: absolute;
+        top: 2px;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 5vh !important;
+        width: 100%;
+        left: 0;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 40%;
+        text-align: center;
+    }
+
+    .offer-navbar span {
+        font-size: .6rem !important;
+    }
+    .offer-navbar span i{
+        font-size: .6rem !important;
+        display: none;
+    }
+
+    .offer-navbar {
+        height: 5vh !important;
+    }
+
+    .loginform input{
+        width: 350px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 5px;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 5vh !important;
+        width: 100%;
+        left: 0;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 35%;
+        text-align: center;
+    }
+    .login-footer-btn{
+        width: 100%;
+    }
+
+}

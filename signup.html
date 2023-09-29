@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> SENECA. Versatile clothing made in New York</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fav Icon  -->
+    <link rel="icon" href="images/fac-icon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Owl Carousel CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+<body>
+
+    <!-------------------- Offer Navbar Start------------------------->
+    <div class="container-fluid p-0" id="offer-navbar">
+        <div class="row">
+            <div class="col ">
+                <nav class="navbar py-0 offer-navbar align-middle bg-body-transparent">
+                    <div class="container-fluid ">
+                        <span class="navbar-text ">
+                            New SS '23 collection live. Free shipping, exchanges, & returns.
+                            <i class="bi bi-x-lg" id="close" onclick="close()"></i>
+                        </span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-------------------- Offer Navbar End ------------------------->
+
+
+
+
+    <!-------------------------- Main Navbar Start ----------------------------->
+
+    <div class="container-fluid px-0 ">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar main-navbar px-5 navbar-expand-lg bg-body-transparent">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand " href="index.html">SENECA</a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                                <!-- <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="shop.html">SHOP</a></li> -->
+                                <li class="nav-item dropdown"><a
+                                        class="nav-link text-decoration-none text-black dropdown-toggle text-black"
+                                        href="shop.html" role="button">SHOP</a>
+                                    <ul class="dropdown-menu border-0 py-5 px-5 rounded-0 d-flex gap-5">
+                                        <div class="row py-5">
+                                            <div class="col-6">
+                                                <div class="hover-list">
+                                                    <li><a class="dropdown-item text-black nav-link  py-2 fw-bold active"
+                                                            href="#">Shop All</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Summer Sale</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">New Arrivals</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Best Sellers</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Pants</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Shorts</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Shirts</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Blazers</a></li>
+                                                    <li><a class="dropdown-item text-black nav-link py-0 " href="#"
+                                                            style="font-size: .9rem;">Jackets</a></li>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="shop-hover-img py-2 px-5">
+                                                    <img src="images/shop-hover-img.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <a href="#" class="nav-link px-0">Explore Vantas Pants</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link text-black"
+                                        href="visionaries.html">VISIONARIES</a></li>
+                                <li class="nav-item"><a class="nav-link text-black"
+                                        href="philosophy.html">PHILOSOPHY</a></li>
+                            </ul>
+                            <ul class="icons mt-3">
+                                <li class="list-unstyled"><a href="login.html" class="text-black"><i
+                                            class="bi bi-person"></i></a></li>
+                                <li class="list-unstyled"><a href="#" class="text-black"> <i class="bi bi-bag"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="para mt-3">
+                            <p class="d-none d-lg-block">NEW YORK, NY</p>
+                            <p id="inner-para" class="d-none d-lg-block" ></p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------Main Navbar End -------------------------->
+
+
+
+
+
+    <!---------------------------------- Login Main Start -------------------------->
+    <div class="container-fluid px-0 py-5" id="Signup">
+        <div class="row">
+            <div class="col">
+                <p class="display-4 text-uppercase py-5">Sign Up </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="" method="" name="myForm" class="mySignForm">
+                    <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label">First name</label>
+                        <input type="name" class="form-control py-3 shadow-none input1" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter first name" name="firstname">
+                        <span id="error1"></span>
+                        <!-- <span id="error1One"></span> -->
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleInputPassword1" class="form-label">Last name</label>
+                        <input type="text" class="form-control py-3 shadow-none input2" id="exampleInputPassword1"
+                            placeholder="Enter last name" name="lastname">
+                        <span id="error2"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleInputPassword1" class="form-label">Your email</label>
+                        <input type="email" class="form-control py-3 shadow-none input3" id="exampleInputPassword1"
+                            placeholder="Enter your mail" name="email">
+                        <span id="error3"></span>
+                    </div>
+                    <div class="mb-4 password">
+                        <label for="exampleInputPassword1" class="form-label">Your password</label>
+                        <input type="password" class="form-control py-3 shadow-none input4 password1"
+                            id="exampleInputPassword1" placeholder="Enter your password" name="password">
+                             <!-- <i class="bi bi-eye" id="clickShow"></i> -->
+                        <span id="error4"></span>
+                    </div>
+                    <div class="mb-4 password">
+                        <label for="exampleInputPassword1" class="form-label">Confirm your password</label>
+                        <input type="password" class="form-control py-3 shadow-none input5" id="exampleInputPassword1" placeholder="Confirm your password" name="Cpassword">
+                        <!-- <i class="bi bi-eye" id="clickShow"></i> -->
+                        <span id="error5"></span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+                    <button type="button" class="btn Sign-up-btn my-3 py-3" onclick="mySignupForm()">Sign Up</button>
+                    <p class="text-secondary py-2 text-center">Already have a account?<a href="login.html"
+                            class="text-black mx-2">Log In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- Login Main End -------------------------->
+
+
+
+
+
+    <!---------------------------------- Seneca Fotoer Start -------------------------->
+    <div class="container-fluid px-0 py-0" id="SignupFooter">
+        <div class="row">
+            <div class="container text-center">
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 ">
+                    <div class="col border border-secondary border-opacity-50 border-top-0 py-3">
+                        <h6 class="text-white ">The design is in the details.</h6>
+                        <p class="text-white " style="font-size: .8rem;">We stand behind what we make, designed to
+                            <br>
+                            maximize longevity & minimize impact.
+                        </p>
+                    </div>
+                    <div class="col border border-secondary border-opacity-50  py-3">
+                        <h6 class="text-white ">In relentless pursuit of quality.</h6>
+                        <p class="text-white " style="font-size: .8rem;">Masterfully crafted in Italy & New York,
+                            using
+                            <br> innovative fabrics from the world's top mills.
+                        </p>
+                    </div>
+                    <div class="col border border-secondary border-opacity-50  py-3">
+                        <h6 class="text-white ">For those in pursuit of a vision.</h6>
+                        <p class="text-white " style="font-size: .8rem;">We aim to empower people trying to <br>
+                            forge
+                            their own path in life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="row py-5 ps-sm-3 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-1">
+            <div class="col  px-xl-5 px-lg-5 px-md-3 px-5">
+                <form action="" class="myForm pt-4">
+                    <div class="row">
+                        <div class="col">
+                            <p class="h2 text-white fw-bold">Let’s Connect</p>
+                            <p class="text-white my-3" style="font-size: .8rem;">Release dates, philosophy, stories,
+                                &
+                                book recommendations. <br> A few a month.</p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 row-gap-md-2 row-cols-xl-2">
+                        <div class="col">
+                            <div class="mb-3">
+                                <input type="text"
+                                    class="form-control px-0 text-white shadow-none px-1 w-100 rounded-0 bg-transparent border-bottom border-0"
+                                    placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <button type="button" class="btn Signup-footer-btn px-0 rounded-0"><a href="#"
+                                        class="text-white text-decoration-none stretched-link px-4 py-2">Sign Up <i
+                                            class="bi bi-arrow-up-right"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-sm-1 py-sm-3 px-5">
+                <div class="row d-flex gap-3 footer-links">
+                    <div class="col d-flex flex-column gap-2 py-sm-2">
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">account</a>
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">faq/returns</a>
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">contact</a>
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">instagram</a>
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none"></a>
+                        <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">return policy</a>
+                    </div>
+                    <div class="col d-flex flex-column gap-2 py-sm-2">
+                        <a href="#" class="text-white text-uppercase text-decoration-none">philosophy</a>
+                        <a href="#" class="text-white text-uppercase text-decoration-none">visionaries</a>
+                        <a href="#" class="text-white text-uppercase text-decoration-none">sustainability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-xl-5 px-lg-5 px-md-3 px-sm-1">
+            <div class="col">
+                <p class="fw-bold text-center" style="color: #f84616;">&#xa9; 2023 SENECA ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- Seneca Footer End -------------------------->
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+    <!-- ScrollTrigger CDN Link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- GSAP link  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+
+    <!-- Owl Carousel CDN Link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

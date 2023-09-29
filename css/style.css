@@ -1,0 +1,1129 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap'); */
+
+
+
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #f84616;
+}
+
+#close {
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+#main {
+    position: relative;
+}
+
+
+/* ----------- Offer Navbar ------------  */
+
+.offer-navbar {
+    background: #eceae4 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+.offer-navbar span {
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center !important;
+}
+
+/* ----------- Main Navbar ------------  */
+.login-btn:focus {
+    border: none;
+    padding: 0 !important;
+    margin-left: -50px !important;
+}
+
+.login-modal {
+    position: fixed;
+    z-index: 9;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    height: 45vh;
+    width: 40vw;
+    position: absolute !important;
+    top: -51%;
+    z-index: -1;
+    left: -100% !important;
+    display: none !important;
+}
+
+.dropdown-item {
+    background: transparent !important;
+}
+
+
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #f84616;
+    transition: all .5s;
+
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s;
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0.2), rgba(0, 0, 0, 0));
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #f84616;
+}
+
+.nav-item a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .25s;
+}
+
+
+.nav-link div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.hover-list a:hover::before {
+    width: 0% !important;
+}
+
+
+.active {
+    color: #f84616 !important;
+}
+
+.nav-item a:focus {
+    color: #f84616 !important;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#inner-para {
+    font-size: .9rem;
+}
+
+/* ----------- Header Carousal ------------  */
+.carousel-control-prev i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    height: 35px;
+    color: #000;
+    width: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    font-size: .8rem;
+}
+
+.carousel-control-prev i:hover {
+    background: #f84616;
+    transition: all .5s;
+    color: #fff;
+    border: none;
+}
+
+.carousel-control-next i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    height: 35px;
+    color: #fff;
+    width: 35px;
+    border-radius: 50%;
+    font-size: .8rem;
+    position: absolute;
+    top: 35%;
+}
+
+.carousel-control-next i:hover {
+    background: #f84616;
+    transition: all .5s;
+    color: #fff;
+    border: none;
+}
+
+.carousel {
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+    /* background: #000; */
+}
+
+.carousel-inner {
+    height: 95vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-1 {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.carousel-1 h5 {
+    color: #fff;
+    /* font-size: 2rem; */
+}
+
+.icons .bi-person {
+    font-size: 1.4rem;
+}
+
+.blockquote {
+    position: relative;
+    background: #000;
+}
+
+
+.blockquote h1 {
+    font-size: 25rem;
+    width: 100%;
+    position: absolute;
+    color: #f84616;
+    letter-spacing: 45px;
+    transition: all .3s;
+}
+
+.carousel-1 button {
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+}
+
+
+.carousel-1 button:hover {
+    background: transparent !important;
+    color: #fff !important;
+    transition: all .4s;
+    border: .1px solid #fff !important;
+}
+
+/* ----------- Text Carousal End ------------  */
+#maintextCarousel {
+    height: auto;
+}
+
+.carousel-item-2 {
+    position: relative;
+    height: 50vh;
+}
+
+.carousel-caption-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: ivar-display, serif;
+}
+
+.carousel-inner-2 {
+    height: 50vh !important;
+}
+
+.carousel-indicators-2 {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    gap: 100px;
+}
+
+.carousel-indicators-2 [data-bs-target="#carouselExampleCaptions"] {
+    mix-blend-mode: color-burn;
+    width: 70px;
+    height: 30px;
+    object-fit: fill;
+}
+
+.carousel-2 {
+    height: 50vh;
+}
+
+/* ----------- New Releases ------------  */
+#NewReleases {
+    height: auto;
+}
+
+.NewRelease {
+    position: absolute;
+    top: 110px;
+    right: -50px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #5110e9;
+}
+
+.owl-carousel .item {
+    text-align: center;
+}
+
+.owl-carousel .nav-button {
+    height: 50px;
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+    left: 5%;
+}
+
+.owl-carousel .owl-next {
+    right: 5%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #000;
+    font-size: 20px;
+    background: #eceae4;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #f84616;
+}
+
+
+.size-btn {
+    background: #eceae4;
+}
+
+.size-btn a:hover {
+    color: #f84616;
+}
+
+.NewCard {
+    position: relative;
+    cursor: pointer;
+}
+
+.NewCard img {
+    height: 650px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.NewsOverlay {
+    position: absolute;
+    top: 65%;
+    pointer-events: none;
+}
+
+.News-section {
+    display: none;
+}
+
+.card:hover .News-section {
+    display: block;
+}
+
+
+
+
+/* ----------- Vanta Pants ------------  */
+#VantaPants {
+    height: auto;
+    background: #f4f4f4;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    gap: 2rem;
+}
+
+.Vanta-card {
+    border-radius: 0 !important;
+}
+
+.Vanta-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.Vanta-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background: #00000054;
+    width: 100%;
+    height: 500px;
+}
+
+.Vanta-btn {
+    background: #000;
+    color: #fff;
+}
+
+.Vanta-btn:hover {
+    color: #000;
+    background: #fff;
+    border: .1rem solid #000 !important;
+}
+
+.Vanta-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+
+
+/* ----------- Forma Blazer ------------  */
+#FormaBlazer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.FormaBlazer-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #00000054;
+    width: 100%;
+    height: 100%;
+}
+
+.FormaBlazer-img img {
+    height: 800px;
+    object-fit: cover;
+}
+
+.FormaBlazer-btn {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.FormaBlazer-btn:hover {
+    color: #f84616 !important;
+    transition: all .4s;
+}
+
+
+/* ----------- Best Product Carousel ------------  */
+#BPCarousel {
+    height: auto;
+}
+
+.BestSeller {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+
+}
+
+
+/* ----------- Seneca Visionaries ------------  */
+#SenecaVisionaries {
+    height: auto;
+    background: #28282a;
+}
+
+.Seneca-img-overlay-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    gap: 1rem;
+    background: #00000054;
+    width: 100%;
+    height: 100%;
+}
+
+.Seneca-visionaries-main-img img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.Seneca-visionaries-btn {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.Seneca-visionaries-btn:hover {
+    color: #f84616 !important;
+    transition: all .4s;
+}
+
+/* ----------- Bottom Seneca Carousel ------------  */
+#BottomSenecaCarousel {
+    width: 100%;
+    height: 80vh;
+    background: #f84616;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Seneca Philosophy ------------  */
+#SenecaPhilosophy {
+    height: 40vh;
+    background: #f84616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seneca-p-text{
+    transform: scale(0);
+    opacity: 0;
+}
+
+.Seneca-btn {
+    position: relative;
+    background: transparent;
+    color: #000;
+    /* border: .1px Solid #000 !important; */
+    /* opacity: 0; */
+}
+
+.Seneca-btn a {
+    position: relative;
+    z-index: 1;
+}
+
+.Seneca-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.Seneca-btn:hover::before,
+.Seneca-btn a:hover {
+    color: #000 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+
+/*------------------- Seneca Footer--------------*/
+
+
+#senecaFooter {
+    background: #212529;
+    height: auto;
+    width: 100%;
+}
+
+.seneca-footer-btn {
+    background: transparent;
+    border: .1px solid #fff !important;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.seneca-footer-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.seneca-footer-btn:hover::before,
+.seneca-footer-btn a:hover {
+    cursor: pointer;
+    width: 100%;
+    color: #000 !important;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------- Media Query -------------------------------------------*/
+
+@media (max-width: 576px) {
+
+    .carousel-control-prev i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        height: 35px;
+        color: #000;
+        width: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 35%;
+        font-size: .8rem;
+    }
+
+    .carousel-control-prev i:hover {
+        background: #f84616;
+        transition: all .5s;
+        color: #fff;
+        border: none;
+    }
+
+    .carousel-control-next i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        height: 35px;
+        color: #fff;
+        width: 35px;
+        border-radius: 50%;
+        font-size: .8rem;
+        position: absolute;
+        top: 35%;
+    }
+
+    .carousel-control-next i:hover {
+        background: #f84616;
+        transition: all .5s;
+        color: #fff;
+        border: none;
+    }
+
+    .top-carousel {
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+        /* background: #000; */
+    }
+
+    .top-carousel-inner {
+        height: 90vh;
+    }
+
+    .top-carousel-item img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+
+    #s-heading {
+        font-size: 9rem;
+
+    }
+
+    #close {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        left: 0;
+        border: none;
+    }
+
+    .icons {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        background-color: #fff;
+    }
+
+    .card-img-overlay {
+        top: 60%;
+        pointer-events: none;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 8px !important;
+    }
+
+    .shop-text-sm {
+        font-size: 1rem !important;
+        padding: 0 .3rem;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: -2px;
+        width: 100%;
+        left: 0;
+        padding: 3rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .seneca-footer-btn{
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 0 1px;
+    }
+
+    .nav-link div {
+        display: none;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 40%;
+        text-align: center;
+    }
+
+    .offer-navbar span {
+        font-size: .6rem !important;
+    }
+
+    .offer-navbar span i {
+        font-size: .6rem !important;
+    }
+
+    .offer-navbar {
+        height: 5vh !important;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .carousel-control-prev i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #000; */
+        height: 35px;
+        color: #000;
+        width: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        font-size: .8rem;
+    }
+
+    .carousel-control-prev i:hover {
+        background: #f84616;
+        transition: all .5s;
+        color: #fff;
+        border: none;
+    }
+
+    .carousel-control-next i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #000; */
+        height: 35px;
+        color: #fff;
+        width: 35px;
+        border-radius: 50%;
+        font-size: .8rem;
+        position: absolute;
+        top: 50% !important;
+    }
+
+    .carousel-control-next i:hover {
+        background: #f84616;
+        transition: all .5s;
+        color: #fff;
+        border: none;
+    }
+
+    .top-carousel {
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+        /* background: #000; */
+    }
+
+    .carousel-inner {
+        height: 90vh;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+
+    #s-heading {
+        font-size: 9rem;
+
+    }
+
+    .carousel-1 {
+        position: absolute;
+        overflow: hidden;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+    }
+
+    .carousel-1 h5 {
+        color: #fff;
+        /* font-size: 2rem; */
+    }
+
+    .icons .bi-person {
+        font-size: 1.4rem;
+    }
+
+    .blockquote {
+        position: relative;
+        background: #000;
+    }
+
+
+    .blockquote h1 {
+        font-size: 25rem;
+        width: 100%;
+        position: absolute;
+        color: #f84616;
+        letter-spacing: 45px;
+        transition: all .3s;
+    }
+
+    .carousel-1 button {
+        background: #fff;
+        color: #000;
+        overflow: hidden;
+    }
+
+
+    .carousel-1 button:hover {
+        background: transparent !important;
+        color: #fff !important;
+        transition: all .4s;
+        border: .1px solid #fff !important;
+    }
+
+
+    .Seneca-img-overlay-main {
+        position: absolute;
+        top: 0 !important;
+        background: #00000054;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Seneca-visionaries-main-img img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .FormaBlazer-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0 !important;
+        gap: 1rem;
+        background: #00000054;
+        width: 100%;
+        height: 100%;
+    }
+
+    .FormaBlazer-img img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .Vanta-card img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .Vanta-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0 !important;
+        z-index: 0;
+        background: #00000054;
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .NewCard img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .owl-carousel .nav-button {
+        height: 50px;
+        width: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 250px;
+
+    }
+
+    .owl-carousel .owl-prev {
+        left: 0;
+    }
+
+    .owl-carousel .owl-next {
+        right: 2%;
+    }
+
+    .vanta-h5 {
+        white-space: nowrap;
+    }
+
+    .main-navbar {
+        padding: 0 0 2.5rem 0;
+        background-color: #fff;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        z-index: 1;
+        border: none;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 35%;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        left: 0;
+        padding: 5rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+
+    .nav-link div {
+        display: none;
+    }
+
+    .shop-card {
+        width: 100%;
+    }
+
+    .shop-card img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .icons {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .card-img-overlay {
+        top: 58%;
+        pointer-events: none;
+    }
+
+    .seneca-footer-btn{
+        width: 100%;
+    }
+
+}

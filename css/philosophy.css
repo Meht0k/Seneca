@@ -1,0 +1,393 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #f84616;
+}
+
+#close {
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+#main {
+    position: relative;
+}
+
+
+/* ----------- Offer Navbar ------------  */
+
+.offer-navbar {
+    background: #eceae4 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+.offer-navbar span {
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center !important;
+}
+
+/* ----------- Main Navbar ------------  */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+
+.dropdown-toggle::after{
+        content: none;
+}
+.dropdown-menu{
+    height: 45vh;
+    width: 40vw;
+    position: absolute !important;
+    top: -45%;
+    z-index: -1;
+    left: -100% !important;
+    display: none !important;
+}
+.dropdown-item{
+    background: transparent !important;
+}
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    transition: all .5s;
+
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s;
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0.2), rgba(0, 0, 0, 0));
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #000;
+}
+
+.nav-item a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .25s ease-out;
+}
+.nav-item a:hover::before {
+    width: 100%;
+}
+.hover-list a:hover::before {
+    width: 0%;
+}
+.nav-link div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.active {
+    color: #f84616 !important;
+}
+
+.nav-item a:focus {
+    color: #f84616 !important;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#inner-para {
+    font-size: .9rem;
+}
+/*------------------------ P-Header ------------------------*/
+#pHeader{
+    height: 95vh;
+    width: 100%;
+    background: #f84616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: acumin-pro, sans-serif;
+}
+
+
+/*------------------------ Philosophy Header ------------------------*/
+
+#PhilosophyMain{
+    background: beige;
+    height: 100vh;
+}
+#philo-heading{
+    transition: all 1s;
+    scale: 0;
+}
+/*------------------------ Philosophy Main ------------------------*/
+.philocard img{
+    height: 650px;
+    object-fit: cover;
+}
+
+
+/*------------------------ Philosophy Journey ------------------------*/
+#PhiloJourney{
+    height: 100vh;
+    background: #f84616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*------------------------ Philosophy Fotoer ------------------------*/
+#philosophyFooter{
+    background: #212529;
+    height: auto;
+    width: 100%;
+}
+
+.p-footer-btn{
+    background: transparent;
+    border: .1px solid #fff !important;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.p-footer-btn::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.p-footer-btn:hover::before, .p-footer-btn a:hover{
+    cursor: pointer;
+    width: 100%;
+    color: #000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .philocard img{
+        height: 400px;
+    }
+    .p-footer-btn{
+        width: 100%;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        z-index: 1;
+    }
+
+    .icons {
+        position: fixed;
+        top: -8px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        background-color: #fff;
+        padding: .8rem 0;
+    }
+
+    .card-img-overlay {
+        top: 60%;
+        pointer-events: none;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: -2px;
+        width: 100%;
+        left: 0;
+        padding: 4rem 0 1rem 0;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0 1px;
+    }
+
+    .nav-link div {
+        display: none;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 40%;
+        text-align: center;
+    }
+
+    .offer-navbar span {
+        font-size: .6rem !important;
+    }
+
+    .offer-navbar span i {
+        font-size: .6rem !important;
+    }
+
+    .offer-navbar {
+        height: 5vh !important;
+    }
+
+
+}
+
+
+@media (max-width:992px){
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        z-index: 1;
+    }
+
+    .icons {
+        position: fixed;
+        top: -8px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        background-color: #fff;
+        padding: .8rem 0;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: -2px;
+        width: 100%;
+        left: 0;
+        padding: 4rem 0 1rem 0;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 40%;
+        text-align: center;
+    }
+    .p-footer-btn{
+        width: 100%;
+    }
+}

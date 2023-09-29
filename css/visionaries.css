@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #f84616;
+}
+
+#close {
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+#visionariesMain {
+    position: relative;
+    z-index: 9999;
+}
+
+
+/* ----------- Offer Navbar ------------  */
+
+.offer-navbar {
+    background: #eceae4 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+.offer-navbar span {
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center !important;
+}
+
+/* ----------- Main Navbar ------------  */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    height: 40vh;
+    width: 40vw;
+    position: absolute !important;
+    left: -100% !important;
+    display: none !important;
+}
+
+.dropdown-item {
+    background: transparent !important;
+}
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #f84616;
+    transition: all .5s;
+
+}
+
+.visionaries-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #f84616;
+}
+
+.nav-item a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .25s;
+}
+
+.hover-list a:hover::before {
+    width: 0% !important;
+}
+
+.nav-link div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f84616;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.active {
+    color: #f84616 !important;
+}
+
+.nav-item a:focus {
+    color: #f84616 !important;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#inner-para {
+    font-size: .9rem;
+}
+
+
+/*------------------------------- header  ----------------------------*/
+#header {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.card-header {
+    position: relative;
+    height: 90vh;
+}
+
+.card-header img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-overlay-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #00000049;
+    width: 100%;
+    height: 100%;
+}
+
+.v-heading-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*------------------------------- Visionaries Main  ----------------------------*/
+
+.card-img-overlay-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #00000054;
+    width: 100%;
+    height: 100%;
+}
+
+.visionaries-card {
+    height: 800px;
+}
+
+.visionaries-card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.visionaries-btn {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.visionaries-btn:hover {
+    color: #f84616 !important;
+    transition: all .4s;
+}
+
+/*-------------------------------  Journey  ----------------------------*/
+#journey {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*-------------------------------  Philosophy ----------------------------*/
+#Philosophy {
+    height: 40vh;
+    background: #f84616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.philosophy-btn {
+    position: relative;
+    background: transparent;
+    color: #000;
+    border: .1px Solid #fff !important;
+}
+
+.philosophy-btn a {
+    position: relative;
+    z-index: 1;
+}
+
+.philosophy-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.philosophy-btn:hover::before,
+.philosophy-btn a:hover {
+    color: #000 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+/*-------------------------------  Visionaries Footer  ----------------------------*/
+
+#visionariesFooter {
+    background: #212529;
+    height: auto;
+    width: 100%;
+}
+
+.v-footer-btn {
+    background: transparent;
+    border: .1px solid #fff !important;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.v-footer-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.v-footer-btn:hover::before,
+.v-footer-btn a:hover {
+    cursor: pointer;
+    width: 100%;
+    color: #000 !important;
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .v-footer-btn{
+        width: 100%;
+    }
+    .card-header {
+        height: 80vh;
+    }
+
+    .card-header img {
+        object-fit: cover;
+    }
+
+    .visionaries-card {
+        height: 400px;
+    }
+
+    .visionaries-card img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .visionaries-navbar {
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        z-index: 9;
+    }
+    .time{
+        display: none;
+    }
+    .navbar-brand{
+        position: absolute;
+        top: 2px;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 6.5vh !important;
+        width: 100%;
+        left: 0;
+        padding: 1rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 40%;
+        text-align: center;
+    }
+
+    .offer-navbar span {
+        font-size: .6rem !important;
+    }
+    .offer-navbar span i{
+        font-size: .6rem !important;
+        display: none;
+    }
+
+    .offer-navbar {
+        height: 5vh !important;
+    }
+    
+    .v-heading-2 {
+        opacity: 1;
+        font-size: 1.8rem;
+    }
+    .visionaries-footer-form{
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-header {
+        height: 100vh;
+    }
+
+    .card-header img {
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .v-footer-btn{
+        width: 100%;
+    }
+    .card-header {
+        height: 85vh;
+    }
+
+    .card-header img {
+        object-fit: cover;
+    }
+
+    .visionaries-card {
+        height: 600px;
+    }
+
+    .visionaries-card img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .visionaries-navbar{
+        padding: 1rem 0;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+
+    .nav-item a:hover::before {
+        width: 35%;
+    } 
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 4vh;
+        width: 100%;
+        left: 0;
+        padding: 1rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-link div {
+        display: none;
+    }
+    .navbar-brand{
+        position: absolute;
+        top: 2px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        border: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .v-heading-2 {
+        position: absolute;
+        top: 35%;
+        text-align: center;
+    }
+    #journey{
+        height: 30vh;
+    }
+    #Philosophy{
+        height: 30vh;
+    }
+}

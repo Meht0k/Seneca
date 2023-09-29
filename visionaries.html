@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Visionaries. Thinkers, Creators, Innovators | SENECA</title>
+
+
+    <!-- Fav Icon  -->
+    <link rel="icon" href="images/fac-icon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- LocoMotive Scroll CDN Link  -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap Icons Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/visionaries.css">
+</head>
+
+<body>
+
+        <!-------------------- Offer Navbar ------------------------->
+        <div class="container-fluid p-0" id="offer-navbar">
+            <div class="row">
+                <div class="col ">
+                    <nav class="navbar py-0 offer-navbar align-middle bg-body-transparent">
+                        <div class="container-fluid ">
+                            <span class="navbar-text ">
+                                New SS '23 collection live. Free shipping, exchanges, & returns.
+                                <i class="bi bi-x-lg" id="close" onclick="close()"></i>
+                            </span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+        <!-------------------------- Main Navbar ----------------------------->
+    
+        <div class="container-fluid p-0 ">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar visionaries-navbar  px-5 navbar-expand-lg bg-body-transparent">
+                        <div class="container-fluid p-0">
+                            <a class="navbar-brand" href="index.html">SENECA</a>
+                            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+    
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                                    <!-- <li class="nav-item"><a class="nav-link text-black " aria-current="page" href="shop.html"> SHOP </a></li> -->
+                                    <li class="nav-item dropdown"><a
+                                            class="nav-link text-decoration-none text-black dropdown-toggle text-black"
+                                            href="shop.html" role="button" style="font-size: 1.1rem;">
+                                            SHOP</a>
+                                        <ul class="dropdown-menu border-0 py-5 px-5 rounded-0 d-flex gap-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="hover-list">
+                                                        <li><a class="dropdown-item text-black nav-link  py-2 fw-bold active" href="#">Shop All</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Summer Sale</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">New Arrivals</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Best Sellers</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Pants</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Shorts</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Shirts</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Blazers</a></li>
+                                                        <li><a class="dropdown-item text-black nav-link py-0 " href="#" style="font-size: .9rem;">Jackets</a></li>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="shop-hover-img py-2 px-5">
+                                                        <img src="images/shop-hover-img.jpg" class="img-fluid w-100" alt="">
+                                                        <a href="#" class="nav-link px-0">Explore Vantas Pants</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link active" href="visionaries.html" style="font-size: 1.1rem;"> <div></div> VISIONARIES</a></li>
+                                    <li class="nav-item"><a class="nav-link text-black" href="philosophy.html" style="font-size: 1.1rem;">PHILOSOPHY</a></li>
+                                </ul>
+                                <ul class="icons mt-3">
+                                    <li class="list-unstyled"><a href="login.html" class="text-black"><i class="bi bi-person"></i></a></li>
+                                    <li class="list-unstyled"><a href="#" class="text-black"> <i class="bi bi-bag"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="para mt-3 ">
+                                <p class="d-none d-lg-block">NEW YORK, NY</p>
+                                <p id="inner-para" class="d-none d-lg-block"></p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Main Navbar End -------------------------->
+    
+    
+    
+        <!---------------------------------- Visionaries Header Start -------------------------->
+        <div class="container-fluid px-lg-5 px-md-3 px-sm-2 px-2 " id="header">
+            <div class="row">
+                <div class="col">
+                    <div class="card p-0 border-0 card-header rounded-0 ">
+                        <img src="images/vision-img-header.jpg" class="card-img w-100 rounded-0" alt="...">
+                        <div class="card-img-overlay card-img-overlay-header ">
+                            <!-- <p class="card-title display-5 text-white h2 fw-bold v-heading-1" id="">Visionaries</p> -->
+                            <p class="card-title display-5 text-white h2 fw-bold v-heading-2">Visionaries Thinkekrs, Creators, Innovators </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------- Visionaries Header End -------------------------->
+    
+        <!---------------------------------- Visionaries Main Start -------------------------->
+        <div class="container-fluid px-lg-5 px-md-3 px-sm-2 px-2" id="VisionariesMain">
+            <div class="row py-lg-5 py-md-0 py-sm-2 py-0 my-lg-5 my-md-3 my-1">
+                <div class="col">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="display-6 fw-bold py-5">We are inspired by those <br>
+                                who pursue their own vision.</p>
+                        </blockquote>
+                    </figure>
+                </div>
+            </div>
+            <div class="row px-0 visionaries-main-img row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 g-3">
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img1.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Danny Taing</h4>
+                            <p class="card-text">CEO and Founder of Japanese snack subscription <br> service, Bokksu.
+                                <br> May 2023 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img2.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Nimesh Patel</h4>
+                            <p class="card-text ">Emmy nominated comedian, first Indian writer on <br> SNL, Comedy
+                                Cellar native. <br>
+                                March 2023 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img3.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">South Asian Americans for <br> Change (SAAFC)</h4>
+                            <p class="card-text">Co-founders Sumit Shukla & Rupal Joshi
+                                <br> March 2023 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img4.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Michael Lebowitz</h4>
+                            <p class="card-text ">Founder of award-winning agency, Big Spaceship. <br>
+                                February 2023 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img5.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Sekani Solomon</h4>
+                            <p class="card-text">
+                                Award-winning Motion Designer. <br>
+                                January 2023 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img6.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Greg Gittrich</h4>
+                            <p class="card-text ">CEO of Creatively. <br>
+                                October 2022 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img7.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Nabeel Alamgir</h4>
+                            <p class="card-text">CEO & co-founder of Lunchbox. <br>
+                                September 2022 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img8.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Abhishek Pruisken</h4>
+                            <p class="card-text ">CEO & co-founder of Rip Van. <br>
+                                August 2022 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img9.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Zack O'Malley Greenburg</h4>
+                            <p class="card-text">4x author and writer. <br>
+                                July 2022 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img10.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Chinese Tuxedo</h4>
+                            <p class="card-text ">Acclaimed New York restaurateurs. <br>
+                                April 2022 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img11.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Tim Joo</h4>
+                            <p class="card-text">Creative Director & co-founder of Haerfest. <br>
+                                March 2022 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img12.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Su Sanni</h4>
+                            <p class="card-text ">Founder of Dollaride. <br>
+                                February 2022 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img13.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Stuart Roberts</h4>
+                            <p class="card-text">NY Times bestselling editor. <br>
+                                January 2022 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img14.jpg" class="  rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Jeromy Ko</h4>
+                            <p class="card-text ">Co-founder of Nom Life. <br>
+                                December 2021 AD</p>
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 visionaries-card rounded-0 text-bg-dark">
+                        <img src="images/vision-main-img15.jpg" class="rounded-0 h-100 img-fluid" alt="...">
+                        <div class="card-img-overlay card-img-overlay-main text-center">
+                            <h4 class="card-title h2 fw-bold">Kevin Lee</h4>
+                            <p class="card-text">Co-founder of immi, purveyor of nutritious ramen. <br>
+                                July 2023 AD
+                            </p>
+    
+                            <button type="button" class="btn btn-link text-white visionaries-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------- Visionaries Main End -------------------------->
+    
+    
+        <!---------------------------------- Journey -------------------------->
+    
+        <div class="container-fluid" id="journey">
+            <div class="row px-xl-5 px-lg-5 px-md-2 px-0 py-sm-3 py-md-4 py-lg-5 py-xl-5">
+                <div class="col d-flex text-center flex-column gap-4">
+                    <p class="display-6 fw-bold mt-sm-3">Clothing for the journey, <br>
+                        no matter your pursuit. </p>
+                    <p class="display-6 fw-bold">This is Seneca.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!---------------------------------- Journey -------------------------->
+    
+    
+    
+    
+        <!----------------------------------Philosophy start -------------------------->
+        <div class="container-fluid p-0" id="Philosophy">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-center display-6 text-white fw-bold">The journey is up to you.</p>
+                    <button type="button" class="btn philosophy-btn mt-2 rounded-0 px-0"><a href="philosophy.html"
+                            class="stretched-link text-decoration-none text-white py-2 px-5 "> Philosophy <i class="bi bi-arrow-up-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Philosophy End -------------------------->
+    
+    
+    
+    
+    
+        <!---------------------------------- Visionaries Footer Start -------------------------->
+        <div class="container-fluid px-0 py-0" id="visionariesFooter">
+            <div class="row">
+                <div class="container text-center">
+                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 ">
+                        <div class="col border border-secondary border-opacity-50 border-top-0 py-3">
+                            <h6 class="text-white ">The design is in the details.</h6>
+                            <p class="text-white " style="font-size: .8rem;">We stand behind what we make, designed to
+                                <br>
+                                maximize longevity & minimize impact.
+                            </p>
+                        </div>
+                        <div class="col border border-secondary border-opacity-50  py-3">
+                            <h6 class="text-white ">In relentless pursuit of quality.</h6>
+                            <p class="text-white " style="font-size: .8rem;">Masterfully crafted in Italy & New York,
+                                using
+                                <br> innovative fabrics from the world's top mills.
+                            </p>
+                        </div>
+                        <div class="col border border-secondary border-opacity-50  py-3">
+                            <h6 class="text-white ">For those in pursuit of a vision.</h6>
+                            <p class="text-white " style="font-size: .8rem;">We aim to empower people trying to <br>
+                                forge
+                                their own path in life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="row py-5 ps-sm-3 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-1">
+                <div class="col  px-xl-5 px-lg-5 px-md-3 px-5">
+                    <form action="" class="myForm pt-4">
+                        <div class="row">
+                            <div class="col">
+                                <p class="h2 text-white fw-bold">Let’s Connect</p>
+                                <p class="text-white my-3" style="font-size: .8rem;">Release dates, philosophy, stories,
+                                    &
+                                    book recommendations. <br> A few a month.</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2 row-gap-md-2 row-cols-xl-2">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <input type="text"
+                                        class="form-control px-0 text-white shadow-none px-1 w-100 rounded-0 bg-transparent border-bottom border-0"
+                                        placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <button type="button" class="btn v-footer-btn px-0 rounded-0"><a href="#"
+                                            class="text-white text-decoration-none stretched-link px-4 py-2">Sign Up <i
+                                                class="bi bi-arrow-up-right"></i></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-sm-1 py-sm-3 px-5">
+                    <div class="row d-flex gap-3 footer-links">
+                        <div class="col d-flex flex-column gap-2 py-sm-2">
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">account</a>
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">faq/returns</a>
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">contact</a>
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">instagram</a>
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none"></a>
+                            <a href="#" class=" text-white text-sm-start text-uppercase text-decoration-none">return policy</a>
+                        </div>
+                        <div class="col d-flex flex-column gap-2 py-sm-2">
+                            <a href="#" class="text-white text-uppercase text-decoration-none">philosophy</a>
+                            <a href="#" class="text-white text-uppercase text-decoration-none">visionaries</a>
+                            <a href="#" class="text-white text-uppercase text-decoration-none">sustainability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-xl-5 px-lg-5 px-md-3 px-sm-1">
+                <div class="col">
+                    <p class="fw-bold text-center" style="color: #f84616;">&#xa9; 2023 SENECA ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+        <!---------------------------------- Visionaries Footer End -------------------------->
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+    <!-- LocoMotive Scroll CDN Link  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+
+
+    <!-- ScrollTrigger CDN Link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- GSAP link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+    <!-- Custom JS Link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

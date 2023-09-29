@@ -1,0 +1,633 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #f84616;
+}
+
+#close {
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+#main {
+    position: relative;
+}
+
+
+/* ----------- Offer Navbar ------------  */
+
+.offer-navbar {
+    background: #eceae4 !important;
+    width: 100%;
+    transition: all .5s;
+}
+
+.offer-navbar span {
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center !important;
+}
+
+/* ----------- Main Navbar ------------  */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    height: 45vh;
+    width: 40vw;
+    position: absolute !important;
+    top: -51%;
+    z-index: -1;
+    left: -100% !important;
+    display: none !important;
+}
+
+.dropdown-item {
+    background: transparent !important;
+}
+
+
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+    color: #f84616;
+    transition: all .5s;
+
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item a:hover {
+    color: #f84616;
+}
+
+.nav-item a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .25s;
+}
+
+.hover-list a:hover::before {
+    width: 0%;
+}
+
+
+.nav-link div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f84616;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.active {
+    color: #f84616 !important;
+}
+
+.nav-item a:focus {
+    color: #f84616 !important;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#inner-para {
+    font-size: .9rem;
+}
+
+/* ----------- Add Shop Cart ------------  */
+#AddShopCart {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+
+.AddCartImg img {
+    height: 800px;
+    object-fit: cover;
+}
+
+.AddCartvideo {
+    height: 800px;
+    overflow-y: hidden;
+}
+
+/* video {
+    aspect-ratio: inherit;
+} */
+
+.core div:nth-child(1) {
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to bottom,
+            rgb(35, 78, 173) 50%,
+            #f8f1f1 50%);
+}
+
+.core div:nth-child(2) {
+    height: 20px;
+    width: 20px;
+    background: #373447;
+}
+
+.core div:nth-child(3) {
+    height: 20px;
+    width: 20px;
+    background: #757575;
+}
+
+.core div:nth-child(4) {
+    height: 20px;
+    width: 20px;
+    background: #202757;
+}
+
+.core div:nth-child(5) {
+    height: 20px;
+    width: 20px;
+    background: #4d7350;
+}
+
+.core div:nth-child(6) {
+    height: 20px;
+    width: 20px;
+    background: #358bdb;
+}
+
+.core div:nth-child(7) {
+    height: 20px;
+    width: 20px;
+    background: #d6d0ab;
+}
+
+.core div:nth-child(8) {
+    height: 20px;
+    width: 20px;
+    background: #030303;
+}
+
+.core div:nth-child(9) {
+    height: 20px;
+    width: 20px;
+    background: #334787;
+}
+
+.select-size a:hover {
+    background: #f84616 !important;
+}
+
+.select-size a:focus {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
+/*--------------------------- modal ---------------------*/
+.modal {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*----------------- versatility ------------------*/
+#ShopCartCarousel {
+    height: auto;
+}
+
+.Shop-Cart-Carousel {
+    position: absolute;
+    top: 200px;
+    right: -100px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    /* background: #000; */
+}
+
+.carousel-wrapper {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #5110e9;
+}
+
+.owl-carousel .item {
+    text-align: center;
+}
+
+.owl-carousel .nav-button {
+    height: 50px;
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 350px !important;
+
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+    left: 5%;
+}
+
+.owl-carousel .owl-next {
+    right: 5%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #000;
+    font-size: 20px;
+    background: #eceae4;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #f84616;
+}
+
+.versatilityCard {
+    position: relative;
+    cursor: pointer;
+}
+
+.versatilityCard img {
+    height: 650px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+#accordionExample {
+    border: none !important;
+}
+
+.accordion-button {
+    background: transparent;
+}
+
+.accordion-button:focus {
+    color: #000;
+    background: transparent;
+}
+
+.accordion-button::after {
+    background-image: initial;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: initial;
+}
+
+
+/* ----------- Add Shop Cart Footer------------  */
+
+#AddShopCartFooter {
+    background: #212529;
+    height: auto;
+    width: 100%;
+}
+
+.seneca-footer-btn {
+    background: transparent;
+    border: .1px solid #fff !important;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.seneca-footer-btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.seneca-footer-btn:hover::before,
+.seneca-footer-btn a:hover {
+    cursor: pointer;
+    width: 100%;
+    color: #000 !important;
+}
+
+
+
+
+
+
+@media (max-width:576px) {
+
+
+    .owl-theme .owl-nav [class*=owl-] {
+        color: #000;
+        font-size: 20px;
+        background: #eceae4;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: #f84616;
+    }
+
+    .owl-carousel .owl-prev {
+        left: 0;
+    }
+
+    .owl-carousel .owl-next {
+        right: 0;
+    }
+
+    .owl-carousel .nav-button {
+        height: 50px;
+        width: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 230px !important;
+    
+    }
+
+
+    .versatilityCard {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .Shop-Cart-Carousel {
+        top: 250px !important;
+        right: 0;
+    }
+
+    .versatilityCard img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0;
+        padding: 0;
+    }
+
+
+
+    .seneca-footer-btn {
+        width: 100%;
+    }
+
+    .AddCartImg img {
+        height: 400px !important;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border: none;
+        z-index: 1;
+    }
+
+    .icons {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 2px;
+        z-index: 1;
+    }
+
+    .offer-navbar span {
+        font-size: .6rem !important;
+    }
+
+    .offer-navbar span i {
+        font-size: .6rem !important;
+        display: none;
+    }
+
+    .offer-navbar {
+        height: 5vh !important;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 4vh;
+        width: 100%;
+        left: 0;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 35%;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .seneca-footer-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .seneca-footer-btn {
+        width: 100%;
+    }
+
+    .AddCartImg img {
+        height: 400px !important;
+    }
+
+    .AddCartvideo {
+        height: 400px;
+    }
+
+    .AddCartvideo video {
+        height: 100%;
+        object-fit: cover;
+        overflow-y: hidden;
+    }
+
+    .Shop-Cart-Carousel {
+        top: 220px;
+        left: -200%;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        z-index: 9;
+    }
+
+    .main-navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 2px;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 4vh;
+        width: 100%;
+        left: 0;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #f84616;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: all .25s;
+    }
+
+    .nav-item a:hover::before {
+        width: 35%;
+        text-align: center;
+    }
+
+    #AddShopCart {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+
+}
